@@ -1,0 +1,6 @@
+.otro-contenedor {
+  flex: 1 0 auto;  /* Change here */
+  background-color: #f00;
+  margin-left: 20px;
+  width: 300px;
+}

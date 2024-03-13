@@ -1,0 +1,31 @@
+<div class="container dodgerblue">
+  <div class="row mt-3">
+    <div class="treeview w-20 hover ">
+      <ul class="mb-1 pl-3 pb-2 " >
+        <li><i class="fas fa-angle-right rotate"></i>
+          <a [routerLink]="[{ outlets: { settingsOutlet: ['settings'] } }]"><i class="far fa-envelope-open ic-w mx-1" ></i >Settings</a>
+          <ul class="nested">
+            <li><i class="far fa-bell ic-w mr-1"></i>Web</li>
+            <li><i class="far fa-address-book ic-w mr-1"></i>Users</li>
+          </ul>
+        </li>
+        <li>
+       <a [routerLink]="[{ outlets: { contratosOutlet: ['contratos'] } }]"><i class="far fa-folder-open ic-w mx-1"></i>Contratos</a>
+          <ul class="nested">
+            <li><i class="far fa-folder-open ic-w mr-1"></i>Inventario</li>
+            <li><i class="far fa-folder-open ic-w mr-1"></i>Impuestos</li>
+            <li><i class="far fa-folder-open ic-w mr-1"></i>Listado</li>
+          </ul>
+        </li>
+        <li><i class="fas fa-angle-right rotate"></i>
+          <a [routerLink]="[{ outlets: { contratistasOutlet: ['contratistas'] } }]"><i class="far fa-gem ic-w mx-1"></i>Contratistas</a>
+          <ul class="nested">
+            <li><i class="fas fa-pepper-hot ic-w mr-1"></i>Gestionar</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+

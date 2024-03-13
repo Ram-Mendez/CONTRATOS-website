@@ -1,0 +1,14 @@
+
+.container-fluid {
+  background-color: black;
+;
+}
+.col {
+  color: white;
+}
+.logoutHover:hover {
+  cursor: pointer;
+}
+.hover:hover {
+  cursor: pointer;
+}
