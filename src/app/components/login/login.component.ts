@@ -14,8 +14,13 @@ export class LoginComponent {
   constructor(private router: Router) {
   }
 
+
   goToMain() {
     this.router.navigate(['/main'])
+  }
+
+  getOut() {
+    window.location.href = 'https://www.google.com';
   }
 
 }

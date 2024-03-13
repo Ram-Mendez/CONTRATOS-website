@@ -12,10 +12,12 @@ export const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {
     path: 'main', component: MainComponent,
-    children: [{path: 'settings', component: SettingsComponent, outlet: 'settingsOutlet'},
-      {path: 'contratos' , component: ContratosComponent, outlet: 'contratosOutlet'},
-      {path: 'contratistas', component: ContratistasComponent, outlet: 'contratistasOutlet'}]
+    children: [
+      {path: 'settings', component: SettingsComponent, },
+      {path: 'contratos' , component: ContratosComponent,},
+      {path: 'contratistas', component: ContratistasComponent,}]
   },
   {path: 'content', component: ContentComponent},
+
 
 ];
