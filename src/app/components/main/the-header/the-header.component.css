@@ -1,14 +1,37 @@
+.skyBlue {
+  background-color: deepskyblue;
+}
+.abc {
+  height: 50px
+}
+.style {
+font-size: 1.2rem;
+color: black;
+  text-align: end;
+}
+.usuario-logout {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
 
-.container-fluid {
-  background-color: black;
-;
+.nombre-usuario {
+  display: block;
+  margin-bottom: 5px;
 }
-.col {
-  color: white;
-}
-.logoutHover:hover {
+
+.boton-logout {
+  background-color: cornflowerblue;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
   cursor: pointer;
 }
-.hover:hover {
+
+.boton-logout:hover {
+  background-color: royalblue;
+}
+.logo:hover {
   cursor: pointer;
 }

@@ -1,22 +1,22 @@
-<body>
-<div class="container black whiteText ">
-  <label><b>Username</b></label>
-  <input type="text" placeholder="Enter Username" name="uname" required>
-
-  <label><b>Password</b></label>
-  <input type="password" placeholder="Enter Password" name="psw" required>
-
-  <button type="submit" (click)="goToMain()">Login</button>
-  <label>
-    <input type="checkbox" checked="checked" name="remember"> Remember me
-  </label>
+<div class="container mt-3">
+  <div class="row justify-content-center">
+    <div class="col-md-2">
+      <div class="contenedor-cuadrado">
+        <img src="/assets/loginUserIcon.png" alt="login">
+        <strong><p class="mb-1">Nombre de usuario</p></strong>
+        <input type="text" class="form-control ">
+        <strong><p class="mb-1">Contraseña</p></strong>
+        <input type="text" class="form-control">
+        <label for="recordar">
+          <input type="checkbox" id="recordar" name="recordar">
+          Recordar
+        </label>
+        <br>
+        <a href="#" class="skyBlue"><i> No recuerdas la contraseña?</i></a>
+        <div class="contenedor-botones ">
+          <button routerLink="/main" type="button" class="btn btn-primary boton ">Login</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-
-<div class="container whiteText"  style="background-color:black">
-  <button type="button" class="cancelbtn" (click)="getOut()">Cancel</button>
-  <span class="psw">Forgot <a href="#" style="color: brown">password?</a></span>
-</div>
-
-
-</body>
-
