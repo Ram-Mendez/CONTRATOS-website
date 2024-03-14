@@ -1,27 +1,38 @@
 <div class="container dodgerblue">
   <div class="row mt-3">
-    <div class="treeview w-20 hover ">
-      <ul class="mb-1 pl-3 pb-2 " >
-        <li><i class="fas fa-angle-right rotate"></i>
-          <a routerLink="/main/settings"><i class="far fa-envelope-open ic-w mx-1" ></i >Ajustes</a>
+    <div class="treeview w-20 left margin">
+      <ul class="mb-1 pl-3 pb-2 ">
+        <li>
+          <a routerLink="/main/settings" class="margin">Ajustes</a>
           <ul class="nested">
-            <li><i class="far fa-bell ic-w mr-1"></i>Web</li>
-            <li><i class="far fa-address-book ic-w mr-1"></i>Usuarios</li>
+            <a routerLink="/main/settings/web">
+              <li class="margin">Web</li>
+            </a>
+            <a routerLink="/main/settings/usuarios">
+              <li class="margin">Usuarios</li>
+            </a>
           </ul>
         </li>
-        
-        <li><i class="fas fa-angle-right rotate"></i>
-       <a routerLink="/main/contratos"><i class="far fa-folder-open ic-w mx-1"></i>Contratos</a>
+        <li>
+          <a routerLink="/main/contratos" class="margin">Contratos</a>
           <ul class="nested">
-            <li><i class="far fa-folder-open ic-w mr-1"></i>Inventario</li>
-            <li><i class="far fa-folder-open ic-w mr-1"></i>Impuestos</li>
-            <li><i class="far fa-folder-open ic-w mr-1"></i>Listado</li>
+            <a routerLink="/main/contratos/inventario">
+              <li class="margin">Inventario</li>
+            </a>
+            <a routerLink="/main/contratos/impuestos">
+              <li class="margin">Impuestos</li>
+            </a>
+            <a routerLink="/main/contratos/listado">
+              <li class="margin">Listado</li>
+            </a>
           </ul>
         </li>
-        <li><i class="fas fa-angle-right rotate"></i>
-          <a routerLink="/main/contratistas"><i class="far fa-gem ic-w mx-1"></i>Contratistas</a>
+        <li>
+          <a routerLink="/main/contratistas">Contratistas</a>
           <ul class="nested">
-            <li><i class="fas fa-pepper-hot ic-w mr-1"></i>Gestionar</li>
+            <a routerLink="/main/contratistas/gestionar">
+              <li class="margin">Gestionar</li>
+            </a>
           </ul>
         </li>
       </ul>
