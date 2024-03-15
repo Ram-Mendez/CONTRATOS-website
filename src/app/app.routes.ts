@@ -16,6 +16,9 @@ import {ListadoComponent} from "./components/main/sidebar/sidebarComponents/cont
 import {
   GestionarComponent
 } from "./components/main/sidebar/sidebarComponents/contratistas/gestionar/gestionar.component";
+import {
+  CrearEditarContratosComponent
+} from "./components/main/sidebar/sidebarComponents/contratos/crear-editar-contratos/crear-editar-contratos.component";
 
 export const routes: Routes = [
   {path: '', component: LoginComponent},
@@ -29,6 +32,7 @@ export const routes: Routes = [
 
       {path: 'contratos', component: ContratosComponent,},
       {path: 'contratos/inventario', component: InventarioComponent,},
+      {path: 'contratos/editarContratos', component: CrearEditarContratosComponent,},
       {path: 'contratos/impuestos', component: ImpuestosComponent,},
       {path: 'contratos/listado', component: ListadoComponent,},
 
