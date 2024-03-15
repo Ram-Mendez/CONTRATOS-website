@@ -7,7 +7,7 @@
 .style {
 font-size: 1.2rem;
 color: black;
-  text-align: end;
+
 }
 .usuario-logout {
   position: absolute;
@@ -34,4 +34,8 @@ color: black;
 }
 .logo:hover {
   cursor: pointer;
+}
+
+.bottom {
+
 }
