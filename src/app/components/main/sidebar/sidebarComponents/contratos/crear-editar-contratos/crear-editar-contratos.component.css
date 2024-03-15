@@ -1,0 +1,20 @@
+.styles {
+  background-color: deepskyblue;
+  border: 10px gray;
+  border-radius: 10%;
+}
+.btnColor {
+  background-color: cornflowerblue;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;}
+.contenedor {
+  width: 315px; /* Ajusta el ancho según tus necesidades */
+  height: 500px; /* Ajusta la altura según tus necesidades */
+  background-color: deepskyblue; /* Elige el color de fondo */
+  /*border: 1px solid #000; !* Elige el color del borde *!*/
+  padding: 10px; /* Ajusta el espacio interior */
+  margin: 10px auto; /* Centra el contenedor */
+}
