@@ -4,7 +4,6 @@ import {ContratoService} from "../../../../../../services/models/contratos/contr
 import {HttpClient, HttpClientModule} from "@angular/common/http";
 import {ActivatedRoute} from "@angular/router";
 import {Contrato} from "../../../../../../services/models/contratos/contrato";
-import {toNumbers} from "@angular/compiler-cli/src/version_helpers";
 
 @Component({
   selector: 'app-crear-editar-contratos',
@@ -20,7 +19,7 @@ import {toNumbers} from "@angular/compiler-cli/src/version_helpers";
 export class CrearEditarContratosComponent implements OnInit {
   id: any = '';
 
-  constructor(private route: ActivatedRoute, private contratoService: ContratoService, private router: ActivatedRoute
+  constructor(private contratoService: ContratoService, private router: ActivatedRoute
     , private http: HttpClient
   ) {
   }
@@ -28,7 +27,6 @@ export class CrearEditarContratosComponent implements OnInit {
   selectOption1 = 4;
   selectOption2 = 15;
   selectOption3 = 21;
-  datosFormulario: any;
 
   contratoForm = new FormGroup({
     nombre: new FormControl(''),

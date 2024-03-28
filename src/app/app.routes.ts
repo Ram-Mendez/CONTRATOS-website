@@ -56,10 +56,12 @@ export const routes: Routes = [
       {path: 'contratistas', component: ContratistasComponent,},
       {path: 'contratistas/gestionar', component: GestionarComponent,},
       {path: 'contratistas/crear-editar', component: CrearEditarContratistasComponent,},
+      {path: 'detallesContratista/:id', component: CrearEditarContratistasComponent,},
       {path: 'contratistas/listado', component: ListadoContratistasComponent,},
 
       {path: 'autoridad', component: AutoridadComponent},
       {path: 'autoridad/crear-editar', component: CrearEditarAutoridadComponent},
+      {path: 'detallesAutoridad/:id', component: CrearEditarAutoridadComponent},
       {path: 'autoridad/listado', component: ListadoAutoridadComponent},
     ]
 
