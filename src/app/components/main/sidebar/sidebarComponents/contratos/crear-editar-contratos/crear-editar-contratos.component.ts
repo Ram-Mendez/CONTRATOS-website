@@ -1,9 +1,9 @@
 import {Component, OnInit} from '@angular/core';
 import {FormControl, FormGroup, ReactiveFormsModule} from "@angular/forms";
-import {ContratoService} from "../../../../../../services/contrato.service";
+import {ContratoService} from "../../../../../../services/models/contratos/contrato.service";
 import {HttpClient, HttpClientModule} from "@angular/common/http";
 import {ActivatedRoute} from "@angular/router";
-import {Contrato} from "../../../../../../services/models/contrato";
+import {Contrato} from "../../../../../../services/models/contratos/contrato";
 import {toNumbers} from "@angular/compiler-cli/src/version_helpers";
 
 @Component({

@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {ContratoService} from "../../../../../../services/contrato.service";
+import {ContratoService} from "../../../../../../services/models/contratos/contrato.service";
 import {HttpClient} from "@angular/common/http";
 import {NgForOf} from "@angular/common";
 import {RouterLink} from "@angular/router";

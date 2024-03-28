@@ -17,14 +17,17 @@ export class ContratoService {
   crearContrato(contratoForm: any): Observable<any> {
     return this.http.post(this.url, contratoForm);
   }
+
   actualizarContrato(contratoForm: any, id: any): Observable<any> {
-    return this.http.put('http://localhost:8080/contratos/' + id , contratoForm);
+    return this.http.put('http://localhost:8080/contratos/' + id, contratoForm);
   }
+
   obtenerContrato(): Observable<any> {
     return this.http.get(this.url);
   }
-  deleteContrato(id: number) : Observable<boolean> {
-    return this.http.delete<boolean>('http://localhost:8080/contratos/'   + id);
+
+  deleteContrato(id: number): Observable<boolean> {
+    return this.http.delete<boolean>('http://localhost:8080/contratos/' + id);
   }
 
 }
