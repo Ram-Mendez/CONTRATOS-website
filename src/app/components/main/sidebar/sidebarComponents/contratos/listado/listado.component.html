@@ -1,6 +1,32 @@
-<h1 class="whiteText text-center mt-3">LISTADO</h1>
-<div class="container styles">
-  <div class="col-xs-6 text-center ">
-    <h2 >algo sobre listado</h2>
-  </div>
+<h1 class="whiteText text-center mt-3">LISTADO DE CONTRATOS</h1>
+<div class="container stylesContainerGreenish">
 </div>
+<table class="table table-success table-striped">
+  <thead>
+  <tr>
+    <th scope="col">ID</th>
+    <th scope="col">Nombre</th>
+    <th scope="col">Fecha</th>
+    <th scope="col">Contratante</th>
+    <th scope="col">Autoridad</th>
+    <th scope="col">IVA %</th>
+    <th scope="col"></th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let contrato of contratos" >
+    <th scope="row">{{ contrato.id }}</th>
+    <td ><a [routerLink]="['/main/detallesContrato', contrato.id]" >   {{ contrato.nombre }} </a>   </td>
+    <td>{{ contrato.fechaCreacion }}</td>
+    <td>{{ contrato.entidadContratante.nombre }}</td>
+    <td>{{ contrato.entidadAutoridad.nombre }}</td>
+    <td>{{ contrato.iva }}
+    </td>
+    <td>
+      <button class="btn btn-danger" (click)="contratoDeleted(contrato.id)"> XXXXX</button>
+    </td>
+  </tr>
+  </tbody>
+</table>
+
+

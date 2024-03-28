@@ -1,42 +1,36 @@
-<div class="container grayBorder" style="overflow-y:scroll">
+<div class="container" style="overflow-y:scroll">
   <div class="row mt-3">
-
-    <div class="treeview w-20 left margin">
-      <ul class="mb-1 pl-3 pb-2 " >
-        <li>
-          <a routerLink="/main/settings" class="margin">Ajustes</a>
-          <ul class="nested">
-            <a routerLink="/main/settings/web">
-              <li class="margin">Web</li>
-            </a>
+    <div class="w-20">
+      <ul class="mb-1 pl-3 pb-2">
+        <li><a routerLink="/main/settings">Ajustes</a>
+          <ul><a routerLink="/main/settings/web">
+            <li>Web</li>
+          </a>
             <a routerLink="/main/settings/usuarios">
-              <li class="margin">Usuarios</li>
+              <li>Usuarios</li>
             </a>
           </ul>
         </li>
-        <li>
-          <a routerLink="/main/contratos" class="margin">Contratos</a>
-          <ul class="nested">
-            <a routerLink="/main/contratos/inventario">
-              <li class="margin">Inventario</li>
-            </a>
+        <li><a routerLink="/main/contratos">Contratos</a>
+          <ul><a routerLink="/main/contratos/inventario">
+            <li>Inventario</li>
+          </a>
             <a routerLink="/main/contratos/editarContratos">
-              <li class="margin">Crear/editar contratos</li>
+              <li>Crear/editar contratos</li>
             </a>
             <a routerLink="/main/contratos/impuestos">
-              <li class="margin">Impuestos</li>
+              <li>Impuestos</li>
             </a>
             <a routerLink="/main/contratos/listado">
-              <li class="margin">Listado</li>
+              <li>Listado</li>
             </a>
           </ul>
         </li>
         <li>
           <a routerLink="/main/contratistas">Contratistas</a>
-          <ul class="nested">
-            <a routerLink="/main/contratistas/gestionar">
-              <li class="margin">Gestionar</li>
-            </a>
+          <ul><a routerLink="/main/contratistas/gestionar">
+            <li>Gestionar</li>
+          </a>
           </ul>
         </li>
       </ul>

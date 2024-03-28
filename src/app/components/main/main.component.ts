@@ -4,7 +4,8 @@ import {SidebarComponent} from "./sidebar/sidebar.component";
 import {ContentComponent} from "./content/content.component";
 import {FooterComponent} from "./footer/footer.component";
 import {LoginComponent} from "../login/login.component";
-import {RouterOutlet} from "@angular/router";
+import {Router, RouterOutlet} from "@angular/router";
+import {FormBuilder, Validators} from "@angular/forms";
 
 @Component({
   selector: 'app-main',
@@ -21,5 +22,13 @@ import {RouterOutlet} from "@angular/router";
   styleUrl: './main.component.css'
 })
 export class MainComponent {
+
+  registerForm = this.formBuilder.group({
+    usuario: [''],
+    contrasena: ['', Validators.maxLength(4)],
+  })
+
+  constructor( private router: Router, private formBuilder: FormBuilder) {
+  }
 
 }

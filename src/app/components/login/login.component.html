@@ -1,23 +1,29 @@
-<div class="container mt-3">
-  <div class="row justify-content-center">
-    <div class="col-md-2">
-      <div class="contenedor-cuadrado">
-        <img src="/assets/loginUserIcon.png" alt="login">
-        <strong><p class="mb-1">Nombre de usuario</p></strong>
-        <input type="text" class="form-control ">
-        <strong><p class="mb-1">Contraseña</p></strong>
-        <input type="text" class="form-control">
-        <label for="recordar">
-          <input type="checkbox" id="recordar" name="recordar">
-          Recordar
-        </label>
-        <br>
-        <a href="#" class="skyBlue"><i> No recuerdas la contraseña?</i></a>
-        <div class="contenedor-botones ">
-          <button routerLink="/main" type="button" class="btn btn-primary boton ">Login</button>
+<form [formGroup]="registerForm" (ngSubmit)="logForm()">
+  <div class="container mt-3">
+    <div class="row justify-content-center">
+      <div class="col-md-2">
+        <div class="contenedor-cuadrado">
+          <img src="/assets/loginUserIcon.png" alt="login">
+<!--          <img src="/assets/loginUserIcon.png" alt="login"> ESTE LOGIN HAY QUE MEJORARLO EVENTUALMENTE -->
+          <strong><p class="mt-3">Nombre de usuario</p></strong>
+          <input
+            formControlName="usuario"
+            type="text" class="form-control ">
+          <strong><p class="mt-3">Contraseña</p></strong>
+          <input
+            formControlName="contrasena"
+            type="text" class="form-control">
+          <label for="recordar">
+            <input
+              type="checkbox" id="recordar" name="recordar">
+            Recordar
+          </label>
+          <br>
+          <a href="#" ><i> No recuerdas la contraseña?</i></a>
+          <button type="submit" class="btn btn-success  ">Login</button>
         </div>
       </div>
     </div>
   </div>
-</div>
+</form>
 <app-footer></app-footer>

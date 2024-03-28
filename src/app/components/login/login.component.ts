@@ -1,6 +1,8 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Router, RouterLink, RouterOutlet} from "@angular/router";
 import {FooterComponent} from "../main/footer/footer.component";
+import {Form, FormBuilder, FormGroup, ReactiveFormsModule, Validators} from "@angular/forms";
+import {UserService} from "../../services/user.service";
 
 @Component({
   selector: 'app-login',
@@ -8,22 +10,30 @@ import {FooterComponent} from "../main/footer/footer.component";
   imports: [
     RouterOutlet,
     RouterLink,
-    FooterComponent
+    FooterComponent,
+    ReactiveFormsModule
   ],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })
-export class LoginComponent {
-  constructor(private router: Router) {
+export class LoginComponent implements OnInit {
+
+  registerForm = this.formBuilder.group({
+    usuario: [''],
+    contrasena: ['', Validators.maxLength(4)],
+  })
+
+  constructor(private formBuilder: FormBuilder, private router: Router, private userService: UserService) {
   }
 
+  ngOnInit() {
 
-  goToMain() {
+  };
+
+  logForm() {
+    console.log(this.registerForm.value);
+    this.userService.nombre = this.registerForm.value.usuario;
     this.router.navigate(['/main'])
-  }
-
-  getOut() {
-    window.location.href = 'https://www.google.com';
   }
 
 }

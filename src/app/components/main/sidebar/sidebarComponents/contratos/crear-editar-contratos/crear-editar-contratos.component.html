@@ -1,17 +1,17 @@
 <h1 class="whiteText text-center mt-3">EDITAR CONTRATOS</h1>
-<div class="container styles text-center ">
-  <div class="contenedor">
+<div class="container stylesContainerGreenish text-center ">
+  <div class="containerGreenish">
     <form [formGroup]="contratoForm" (ngSubmit)="guardarCambios()">
 
-      <label><strong> Contratos</strong></label>
-      <input type="text" formControlName="contrato" placeholder="Crear/editar contrato" class="form-control text-center">
+      <label><strong> Nombre</strong></label>
+      <input type="text" formControlName="nombre" placeholder="Editar contrato" class="form-control text-center">
       <br>
-      <strong>Selecciona fecha</strong>
-      <input type="date" formControlName="fecha" class="form-control text-center">
+      <strong>Fecha de creacion</strong>
+      <input type="date" formControlName="fechaCreacion" class="form-control text-center">
       <br>
       <div class="form-group">
-        <label> <strong>% de Impuesto</strong></label>
-        <select class="form-control text-center" formControlName="impuesto" >
+        <label> <strong>IVA </strong></label>
+        <select class="form-control text-center" formControlName="iva" >
           <option>{{ selectOption1 }} %</option>
           <option>{{ selectOption2 }} %</option>
           <option>{{ selectOption3 }} %</option>
@@ -37,7 +37,7 @@
       </div>
     </form>
     <br>
-    <button type="submit" class="btnColor" (click)="guardarCambios()"> Guardar cambios</button>
+    <button type="submit" class="btn btn-success" (click)="guardarCambios()"> Guardar cambios</button>
     <br>
   </div>
 

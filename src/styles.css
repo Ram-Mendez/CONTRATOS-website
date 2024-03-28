@@ -1,0 +1,15 @@
+.stylesContainerGreenish {
+  background-color: #78C2AD ;
+  border: 10px gray;
+  border-radius: 10%;
+}
+
+.containerGreenish {
+  color: white;
+  width: 315px;
+  height: 500px;
+  background-color: #78C2AD;
+  padding: 10px;
+  margin: 10px auto;
+  border-radius: 10%;
+}
